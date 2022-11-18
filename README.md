@@ -1,4 +1,4 @@
-# taxameter
+# Taxameter
 
 <h1>This is a website for mobile phones, as it is a virtual taxameter for a friend.</h1>
 
