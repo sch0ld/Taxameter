@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Taxameter - SkillarN.se</title>
+
+        <!-- Favicon on computers (for some odd reason) -->
+        
+        <link rel="icon" href="favicon.png" type="image/gif" sizes="16x16">
+        
+        <!-- App Icon For iOS-->
+        <link rel="apple-touch-icon" href="favicon.png">
+         <!-- Coloring Toolbar -->
+         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+        <!-- All Favicons Together -->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+        <link rel="manifest" href="favicons/site.webmanifest">
+        <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#ef989d">
+        <meta name="theme-color" content="#ffffff">
+        
+        <!-- Hiding Toolbar on iOS -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="tax.js"></script>
+    </head>
+    <body id="body" >
+        <div class="vertical-center" onclick="toggleButton()" ondblclick="dblClick()">
+            <h1 id="priceLabel">Click</h1>
+        </div>
+        <label hidden id="IntervalLabel" for="Interval">Interval: 5</label>
+        <input hidden value="5" name="Interval" id="IntervalChanger" onchange="ChangeInterval()" type="range" step="1" min="1" max="25">
+        <h4 id="label"></h4>
+        <h4 id="total"></h4>
+    </body>
+</html>
